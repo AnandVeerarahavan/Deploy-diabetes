@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+          background-color: black;
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Add padding to containers */
+        .container {
+          padding: 16px;
+          background-color: white;
+        }
+        
+        /* Full-width input fields */
+        input[type=number] {
+          width: 100%;
+          padding: 15px;
+          margin: 5px 0 22px 0;
+          display: inline-block;
+          border: none;
+          background: #f1f1f1;
+        }
+        
+        input[type=text]:focus, input[type=password]:focus {
+          background-color: #ddd;
+          outline: none;
+        }
+        
+        /* Overwrite default styles of hr */
+        hr {
+          border: 1px solid #f1f1f1;
+          margin-bottom: 25px;
+        }
+        
+        /* Set a style for the submit button */
+        .submitbtn {
+          background-color: #04AA6D;
+          color: white;
+          padding: 16px 20px;
+          margin: 8px 0;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+          opacity: 0.9;
+        }
+        
+        .submitbtn:hover {
+          opacity: 1;
+        }
+        
+        /* Add a blue text color to links */
+        a {
+          color: dodgerblue;
+        }
+        
+        /* Set a grey background color and center the text of the "sign in" section */
+        </style>
+        </head>
+
+    <body>
+        <form action ="/blogs" method ="POST">
+                
+            <div class="container"> 
+
+                <label for="preg"><b>Preg</b></label>
+                <input type = "number" name ='preg' placeholder ="preg" id ="preg" required ='required'>
+
+                <label for="plas"><b>Plas</b></label>
+                <input type = "number" name ='plas' placeholder ="plas" id ="plas" required ='required'>
+
+                <label for="pres"><b>Pres</b></label>
+                <input type = "number" name ='pres' placeholder ="pres" id ="pres" required ='required'>
+                
+                <label for="skin"><b>Skin</b></label>
+                <input type = "number" name ='skin' placeholder ="skin" id ="skin" required ='required'>
+                
+                <label for="test"><b>Test</b></label>                
+                <input type = "number" name ='test' placeholder ="test" id ="test" required ='required'>
+                
+                <label for="mass"><b>Mass</b></label>                
+                <input type = "number" name ='mass' placeholder ="mass" id ="mass" required ='required'>
+                
+                <label for="pedi"><b>Pedi</b></label>
+                <input type = "number" name ='pedi' placeholder ="pedi" id ="pedi" required ='required'>
+                
+                <label for="age"><b>Age</b></label>                
+                <input type = "number" name ='age' placeholder ="age" id ="age" required ='required'>
+
+            </div>
+                
+            <button type="submit" class="submitbtn">Predict</button>
+
+        </form>
+    </body>
+</html>
