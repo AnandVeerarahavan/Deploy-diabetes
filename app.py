@@ -11,11 +11,6 @@ model =joblib.load('dib_79.pkl')
 # Decorater(@) and routing
 
 @app.route('/')
-def welcome():
-    return render_template('welcome.html')
-
-
-@app.route('/home')
 def home_page():
     return render_template('home.html')
 
