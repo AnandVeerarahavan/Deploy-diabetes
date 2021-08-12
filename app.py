@@ -14,12 +14,8 @@ model =joblib.load('dib_79.pkl')
 def home_page():
     return render_template('home.html')
 
-@app.route('/contact')
-def contact_page():
-    return 'Contact Us anytime'
-
-@app.route('/blogs', methods =['POST'])
-def blogs_page():
+@app.route('/report', methods =['POST'])
+def report_page():
     Preg = request.form.get('preg')
     Plas = request.form.get('plas')
     Pres = request.form.get('pres')
@@ -42,7 +38,7 @@ def blogs_page():
         result = 'non-diabetic'
    
     
-    return render_template('blogs.html', predicted_text = f'You are {result}')
+    return render_template('report.html', predicted_text = f'You are {result}')
 
 # run the app
 
